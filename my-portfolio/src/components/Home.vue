@@ -1,15 +1,23 @@
 <template>
   <div class='main'>
-    <div class='prof'>
-      <img src="../assets/my_icon.png" class='my-icon'>
-      <h1>kaaai</h1>
-    </div>
+    <profile class='profile'/>
+    <menu-bar class='menu-bar'/>
+    <!-- <test/> -->
   </div>
 </template>
 
 <script>
+import MyIcon from './MyIcon.vue'
+import Profile from './Profile.vue'
+import MenuBar from './MenuBar.vue'
+
 export default {
   name: 'Home',
+  components: {
+    MyIcon,
+    Profile,
+    MenuBar
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -24,13 +32,15 @@ export default {
 }
 .main {
   background-color: #19171d;
+  /* background-color: #1b1d21; */
   /* background-color: #000; */
+  width: 100%;
   height: 100%;
 }
-.prof {
+.profile {
   margin-top: 200px;
 }
-.my-icon {
-  width: 15%;
+.menu-bar {
+  margin: 100px auto 100px auto;
 }
 </style>

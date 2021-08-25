@@ -15,13 +15,12 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'RodinNTLGPro-DB', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: #1b1d21;
+  background-color: #19171d;
   height: 100%;
-  padding: 0 300px;
 }
 </style>
