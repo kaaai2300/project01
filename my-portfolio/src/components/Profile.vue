@@ -1,7 +1,7 @@
 <template>
   <div class='profile'>
     <my-icon/>
-    <h1>kaaai</h1>
+    <h1 style='margin-top: 10px;'>kaaai</h1>
     <table class='profile-table'>
       <tr>
         <td class='td1'>誕生日</td>
@@ -19,10 +19,10 @@
         <td class='td1'>趣味</td>
         <td class='td2'>音楽制作</td>
       </tr>
-      <!-- <tr>
-        <td></td>
-        <td></td>
-      </tr> -->
+      <tr>
+        <td class='td1'>連絡先</td>
+        <td class='td2'><a>sanmonidre200@gmail.com</a></td>
+      </tr>
     </table>
   </div>
 </template>
@@ -49,10 +49,10 @@ export default {
   width: 150px;
   text-align: left;
   border-bottom: 1px solid orange;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .profile-table {
   line-height: 30px;
-  margin: 20px auto;
+  margin: 10px auto 20px auto;
 }
 </style>
