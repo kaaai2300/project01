@@ -5,8 +5,6 @@
 <script>
 export default {
   name: 'my-icon',
-  // data () {
-  // },
   props: {
   }
 }
@@ -15,7 +13,6 @@ export default {
 <style>
 .my-icon {
   border-radius: 50%;
-  /* border: 3px aliceblue solid; */
   width: 15%;
 }
 </style>

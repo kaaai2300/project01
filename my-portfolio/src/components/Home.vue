@@ -1,8 +1,7 @@
 <template>
   <div class='main'>
     <profile class='profile'/>
-    <menu-bar class='menu-bar'/>
-    <!-- <test/> -->
+    <menu-bar class='menu-bar' :menuCategories='menuCategories'/>
   </div>
 </template>
 
@@ -10,6 +9,7 @@
 import MyIcon from './MyIcon.vue'
 import Profile from './Profile.vue'
 import MenuBar from './MenuBar.vue'
+import {Constants} from '../constants/Constants'
 
 export default {
   name: 'Home',
@@ -20,7 +20,7 @@ export default {
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      menuCategories: Constants
     }
   }
 }
@@ -32,8 +32,6 @@ export default {
 }
 .main {
   background-color: #19171d;
-  /* background-color: #1b1d21; */
-  /* background-color: #000; */
   width: 100%;
   height: 100%;
 }

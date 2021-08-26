@@ -1,8 +1,11 @@
 <template>
   <div class='menu-bar'>
-    <menu-category class='menu-category'/>
-    <menu-category class='menu-category'/>
-    <menu-category class='menu-category'/>
+    <menu-category
+      v-for='category in menuCategories'
+      :key='category'
+      :category='category'
+      class='menu-category'
+    />
   </div>
 </template>
 
@@ -13,6 +16,11 @@ export default {
   name: 'menu-bar',
   components: {
     MenuCategory
+  },
+  props: {
+    menuCategories: {
+      type: Object
+    }
   }
 }
 </script>

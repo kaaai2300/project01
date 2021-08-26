@@ -15,6 +15,10 @@
         <td class='td1'>職業</td>
         <td class='td2'>Webエンジニア</td>
       </tr>
+      <tr>
+        <td class='td1'>趣味</td>
+        <td class='td2'>音楽制作</td>
+      </tr>
       <!-- <tr>
         <td></td>
         <td></td>
@@ -31,8 +35,6 @@ export default {
   components: {
     MyIcon
   },
-  // data () {
-  // },
   props: {
   }
 }
@@ -41,15 +43,16 @@ export default {
 <style>
 .td1 {
   width: 80px;
-  border-bottom: 1px solid aliceblue;
+  border-bottom: 1px solid orange;
 }
 .td2 {
-  width: 200px;
+  width: 150px;
   text-align: left;
-  border-bottom: 1px solid aliceblue;
+  border-bottom: 1px solid orange;
   padding-left: 10px;
 }
 .profile-table {
+  line-height: 30px;
   margin: 20px auto;
 }
 </style>
