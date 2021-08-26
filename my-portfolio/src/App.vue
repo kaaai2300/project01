@@ -2,7 +2,13 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <v-app id="inspire" dark>
-      <router-view/>
+      <v-content>
+        <v-container fluid fill-height class="pa-0">
+          <v-layout wrap>
+            <router-view/>
+          </v-layout>
+        </v-container>
+      </v-content>
     </v-app>
   </div>
 </template>
@@ -21,6 +27,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   background-color: #19171d;
-  height: 100%;
 }
 </style>

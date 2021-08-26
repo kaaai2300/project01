@@ -1,11 +1,13 @@
 <template>
   <div class='menu-bar'>
-    <menu-category
-      v-for='category in menuCategories'
-      :key='category'
-      :category='category'
-      class='menu-category'
-    />
+    <v-layout wrap>
+      <v-flex xs12 sm6 md4 lg4 v-for='category in menuCategories' :key='category' class='v-flex'>
+        <menu-category
+          :category='category'
+          class='menu-category'
+        />
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
@@ -27,11 +29,9 @@ export default {
 
 <style>
 .menu-bar {
-  display: flex;
-  justify-content: center;
-  width: 80%;
+  max-width: 50%;
 }
 .menu-category {
-  margin: 0 25px;
+  margin: 20px auto;
 }
 </style>
